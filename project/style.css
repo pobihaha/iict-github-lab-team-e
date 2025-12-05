@@ -1,0 +1,29 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+  pointer-events: none; 
+  z-index:1}
+
+body {
+  margin: 0;
+  overflow-y: hidden; /* hidden을 초기값으로 두고 쓸 때만 바꾸면 됨. hidden으로 제때 안 바꾸면 모든 화면에 scroll 생겨서... */
+}
+
+#p5Container {
+  height: 70vh; 
+  width: 0vh;
+}
+
+#questionArea {
+  display : none;
+  background: rgb(253, 253, 240);
+  padding: 40px;
+  min-height: 1000px; /* 이 값을 다시 조정해야 할 듯? 지금 너무 길어서 */
+  top : 120px;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+}
